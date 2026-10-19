@@ -1,0 +1,4 @@
+[build]
+  # Install dependencies if they are missing so the build never depends on a pre-populated node_modules
+  command = "[ -x node_modules/.bin/vite ] || npm ci; npm run build"
+  publish = "dist"
